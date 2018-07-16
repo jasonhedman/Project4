@@ -1,0 +1,67 @@
+%flex-column {
+  @include flex(flex, column);
+  text-align: center;
+}
+
+%flex-row{
+  @include flex(flex, row);
+  text-align: center;
+}
+
+%grid-item{
+  margin: 4px 4px;
+  padding: 8px;
+  border-radius: 6px;
+  color: $main-font-color;
+}
+
+%button {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: .75em;
+  margin-bottom: 1em;
+  transition: opacity .5s;
+  text-transform: uppercase;
+}
+
+%flex-button{
+  margin-right: 8px
+}
+
+%images{
+  display: block;
+}
+
+%links {
+  color: $link-color;
+  text-decoration: none;
+}
+
+%secondary-headline{
+  color: $main-font-color;
+  font-weight: 500;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+
+%nav-item{
+  a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    color: $main-font-color;
+    font-size: 1.125em;
+    font-weight: 300;
+    text-align: center;
+    padding: .4em;
+    &:hover {
+      color: white;
+    }
+  }
+  &:hover{
+    background-color: $main-green;
+    border-radius: 10px;
+  }
+}

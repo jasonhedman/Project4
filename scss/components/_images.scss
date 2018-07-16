@@ -1,0 +1,26 @@
+.img{
+  @include m(frame){
+    @extend %images;
+    width: 100%;
+    border: 2px solid rgb(214, 214, 214);
+    padding: .5em;
+  };
+  @include m(avatar){
+    @extend %images;
+  };
+}
+
+@include bp('lg'){
+  .img{
+    @include m(frame){
+      width: 100%;
+    };
+  }
+  .grid{
+    @include e(col){
+      @include m(6){
+        flex: 1 0;
+      };
+    };
+  }
+};

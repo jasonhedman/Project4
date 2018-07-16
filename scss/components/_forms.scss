@@ -1,0 +1,27 @@
+.img{
+  @include m(avatar){
+    display: block;
+    margin: 1em auto;
+    padding-bottom: .75em;
+  };
+}
+
+.form{
+  @include e(label){
+    @include m(hidden){
+      display: none;
+    };
+  };
+  @include e(input){
+    border: none;
+    margin-bottom: 1.5em;
+    border-bottom: 5px solid $main-green;
+    display: block;
+    width: 100%;
+    padding-bottom: .75em;
+    &:focus{
+      outline: none;
+      border-bottom: 5px solid $dark-green;
+    }
+  };
+}

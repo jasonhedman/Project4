@@ -1,0 +1,20 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+// Media Query Breakpoints
+
+$brk-wide:'min-width: 769px';
+
+//Colors
+
+$main-green:#58E1C1;
+$dark-green: darken($main-green, 25%);
+$main-font-color: #6b6b6b;
+$link-color: #51DDFC;
+
+//Fonts
+
+$main-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Other
+
+$gutter: 8px;

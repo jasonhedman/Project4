@@ -1,0 +1,64 @@
+.btn{
+  @include m(default){
+    background-color: #51DDFC;
+    @extend %button;
+    &:hover{
+      opacity: .75;
+    }
+  }
+  @include m(success){
+    background-color: #63CC82;
+    @extend %button;
+    &:hover{
+      opacity: .75;
+    }
+  };
+  @include m(error){
+    background-color: #E4757A;
+    @extend %button;
+    &:hover{
+      opacity: .75;
+    }
+  };
+  @include m(warning){
+    background-color: #FD7856;
+    @extend %button;
+    &:hover{
+      opacity: .75;
+    }
+  };
+  @include m(info){
+    background-color: #927BC1;
+    @extend %button;
+    &:hover{
+      opacity: .75;
+      }
+    };
+  }
+
+@include bp('lg'){
+  .grid{
+    @include e(col){
+      @include m(12){
+        @include flex(flex, row);
+      };
+    };
+  }
+  .btn{
+    @include m(default){
+      margin-right: 10px;
+    }
+    @include m(success){
+      margin-right: 10px;
+    };
+    @include m(error){
+      margin-right: 10px;
+    };
+    @include m(warning){
+      margin-right: 10px;
+    };
+    @include m(info){
+      margin-right: 10px;
+      };
+    }
+};

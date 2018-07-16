@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+p{
+  line-height: 1.5;
+  color: $main-font-color;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
